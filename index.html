@@ -17,10 +17,7 @@
   <!-- Header -->
   <header class="px-4 lg:px-6 h-16 flex items-center">
     <a class="flex items-center justify-center" href="#">
-      <svg class="h-8 w-8 text-purple-600 dark:text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <!-- Brain Icon -->
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v3m0 0v3m0 0l3 3-3 3m-3-3l3-3-3-3M7.5 5.5a2.5 2.5 0 00-1.25 4.75L7 10M17 10l.25.25a2.5 2.5 0 001.25 4.75"></path>
-      </svg>
+      <img class="h-8 w-8" src="./assets/img/logo.png" alt="SophiaMind Logo">
       <span class="ml-2 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400">SophiaMind</span>
     </a>
     <nav class="ml-auto flex gap-4 sm:gap-6">
@@ -58,9 +55,7 @@
           <!-- Feature 1 -->
           <div class="flex flex-col items-center text-center">
             <div class="mb-4 p-4 bg-purple-100 dark:bg-purple-900 rounded-full">
-              <svg class="h-8 w-8 text-purple-600 dark:text-purple-400">
-                <!-- Brain Icon -->
-              </svg>
+              <img src="./assets/img/aprendizado-de-maquina.png" alt="ai" class="h-8 w-8 text-blue-600 dark:text-blue-400">
             </div>
             <h3 class="text-lg font-bold mb-2">Aprendizado Profundo</h3>
             <p class="text-gray-600 dark:text-gray-400">Redes neurais avançadas que imitam e superam o raciocínio humano.</p>
@@ -68,9 +63,7 @@
           <!-- Feature 2 -->
           <div class="flex flex-col items-center text-center">
             <div class="mb-4 p-4 bg-indigo-100 dark:bg-indigo-900 rounded-full">
-              <svg class="h-8 w-8 text-indigo-600 dark:text-indigo-400">
-                <!-- Message Square Icon -->
-              </svg>
+              <img src="./assets/img/processamento-de-linguagem-natural.png" alt="ai" class="h-8 w-8 text-blue-600 dark:text-blue-400">
             </div>
             <h3 class="text-lg font-bold mb-2">Processamento de Linguagem Natural</h3>
             <p class="text-gray-600 dark:text-gray-400">Compreensão e geração de linguagem humana com precisão inigualável.</p>
@@ -78,12 +71,10 @@
           <!-- Feature 3 -->
           <div class="flex flex-col items-center text-center">
             <div class="mb-4 p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
-              <svg class="h-8 w-8 text-blue-600 dark:text-blue-400">
-                <!-- CPU Icon -->
-              </svg>
+              <img src="./assets/img/cerebro.png" alt="ai" class="h-8 w-8 text-blue-600 dark:text-blue-400">
             </div>
-            <h3 class="text-lg font-bold mb-2">Computação Cognitiva</h3>
-            <p class="text-gray-600 dark:text-gray-400">Sistemas que percebem, aprendem e raciocinam como seres humanos.</p>
+            <h3 class="text-lg font-bold mb-2">Computação Nebulosa</h3>
+            <p class="text-gray-600 dark:text-gray-400">Sistemas que tomam atitudes de acordo com regras inferidas.</p>
           </div>
         </div>
       </div>
@@ -98,11 +89,12 @@
             <p class="text-gray-600 dark:text-gray-400">
               Na SophiaMind, nossa missão vai além da inovação tecnológica. Estamos comprometidos em desenvolver IA que preserve e amplie os valores humanos.
             </p>
+            <br>
             <a href="#" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:from-purple-700 hover:to-indigo-700">Conheça Nossa Equipe</a>
           </div>
           <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-2xl transform rotate-3"></div>
-            <img alt="Equipe da SophiaMind colaborando em um projeto de IA" class="relative z-10 rounded-2xl object-cover w-full h-[400px]" src="/placeholder.svg?height=400&width=600">
+            <img alt="Equipe da SophiaMind colaborando em um projeto de IA" class="relative z-10 rounded-2xl object-cover w-full h-[400px]" src="./assets/img/empresa_brain.jpg">
           </div>
         </div>
       </div>
@@ -142,10 +134,16 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="w-full py-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center">
-    <p class="text-sm">&copy; 2024 SophiaMind. Todos os direitos reservados.</p>
-  </footer>
+<!-- Footer -->
+<footer class="w-full py-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center">
+  <p class="text-sm">&copy; <span id="currentYear"></span> SophiaMind. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Script para pegar o ano atual -->
+<script>
+  // Pega o elemento com o id 'currentYear' e define o conteúdo com o ano atual
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
